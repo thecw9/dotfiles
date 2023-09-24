@@ -1,0 +1,17 @@
+configuration {
+  font: "JetBrainsMonoNerdFont 20";
+  show-icons: true;
+  icon-theme: "Papirus";
+  /* drun-match-fields: "name,generic,exec,categories,keywords"; */
+  drun-match-fields: "name,exec";
+  kb-cancel: "Escape,Control+g,Control+bracketleft,Super+space";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

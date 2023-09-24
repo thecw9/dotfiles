@@ -1,0 +1,16 @@
+{
+  "packages": [
+    "cmake",
+    "rofi",
+    "net-tools",
+    "ranger",
+    "fcitx5-im",
+    "fcitx5-chinese-addons",
+    "fcitx5-pinyin-zhwiki",
+    "fcitx5-material-color"
+  ],
+  "aur": [
+    "google-chrome",
+    "microsoft-edge-dev-bin"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "inbounds": [
+    {
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2080
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "vmess-out",
+      "server": "35.161.115.162",
+      "server_port": 30002,
+      "uuid": "d1b2aa5a-7819-4095-bf8c-b67c7f77b24b"
+    }
+  ]
+}

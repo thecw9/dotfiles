@@ -1,0 +1,24 @@
+(
+  defwindow example
+  :monitor 0
+  :geometry
+  (
+    geometry
+    :anchor "top center"
+    :x 0
+    :y 0
+    :width "10%"
+    :height "10%"
+  )
+
+  :stacking "fg"
+  :wm-ignore "true"
+  :reserve
+  (
+    struts
+    :distance "10px"
+    :side "top"
+  )
+  :windowtype "dock"
+  "Hello World!"
+)

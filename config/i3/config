@@ -1,0 +1,8 @@
+# control focused window
+focus_follows_mouse yes
+focus_on_window_activation focus
+focus_wrapping no
+# Use Mouse+$mod to drag floating windows to their wanted position
+default_orientation horizontal
+
+include ~/.config/i3/config.d/*.conf
