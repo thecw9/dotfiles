@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+eww-rice () {
+	eww --config ~/.config/eww/ $*
+}
+
+eww-rice kill
+eww-rice daemon

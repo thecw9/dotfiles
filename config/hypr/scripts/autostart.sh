@@ -9,4 +9,3 @@ function run {
 
 run swhkd &
 
-echo 'Xft.dpi: 144' | xrdb -merge

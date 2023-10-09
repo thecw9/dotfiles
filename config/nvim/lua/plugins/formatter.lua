@@ -35,6 +35,7 @@ return {
 				format_on_save = true,
 				formatters_by_ft = {
 					python = { "isort", "black" },
+					sh = { "shfmt" },
 					lua = { "stylua" },
 					tex = { "latexindent" },
 					javascript = { { "prettier_d", "prettier" } },

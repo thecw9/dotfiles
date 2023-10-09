@@ -261,7 +261,7 @@ return {
 		"rcarriga/nvim-notify",
 		config = function()
 			vim.notify = require("notify")
-      require("telescope").load_extension("notify")
+			require("telescope").load_extension("notify")
 			require("notify").setup({
 				background_colour = "#1e222a",
 				stages = "fade_in_slide_out",
@@ -312,6 +312,21 @@ return {
 		config = function()
 			require("colorizer").setup()
 		end,
+	},
+	{
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		opts = {
+			-- add any options here
+		},
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
 	},
 
 	-- ui components
