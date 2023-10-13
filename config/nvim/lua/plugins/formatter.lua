@@ -36,6 +36,8 @@ return {
 				formatters_by_ft = {
 					python = { "isort", "black" },
 					sh = { "shfmt" },
+					json = { { "prettier_d", "prettier" } },
+					css = { { "prettier_d", "prettier" } },
 					lua = { "stylua" },
 					tex = { "latexindent" },
 					javascript = { { "prettier_d", "prettier" } },

@@ -44,9 +44,13 @@ function install_packages() {
 function create_symlink() {
 	local source=$1
 	local target=$2
+	# remove target if exists
+	if [ -e $target ]; then
+		sudo rm -rf $target
+	fi
 	# get absolute path
 	source=$(readlink -f $source)
 
-	ln -sf $source $target
+	sudo ln -sf $source $target
 	echo "$OK Symlink $source --> $target created."
 }
