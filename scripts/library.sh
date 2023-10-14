@@ -23,19 +23,14 @@ function is_installed() {
 # Function Install all package if not installed
 # ------------------------------------------------------
 function install_packages() {
-	local packages=$@
-	local not_installed=()
-	for package in $packages; do
-		if ! is_installed $package; then
-			not_installed+=($package)
+	for pkg in "${pkgs[@]}"; do
+		if ! pacman -Qi "$pkg" &>/dev/null; then
+			echo "$NOTE Installing $pkg..."
+			paru -S "$pkg" --noconfirm --needed
+		else
+			echo "$NOTE $pkg already installed."
 		fi
 	done
-	if [ ${#not_installed[@]} -gt 0 ]; then
-		echo "$ACTION Installing packages: ${not_installed[@]}"
-		paru -S ${not_installed[@]}
-	else
-		echo "$NOTE All packages are installed."
-	fi
 }
 
 # ------------------------------------------------------

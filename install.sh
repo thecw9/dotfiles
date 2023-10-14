@@ -63,20 +63,6 @@ else
 fi
 
 # ------------------------------------------------------
-# Install Fonts
-# ------------------------------------------------------
-echo ""
-echo "-------------------------------------"
-echo "$ACTION Installing fonts..."
-echo "-------------------------------------"
-font_pkgs=(
-	"ttf-firacode-nerd"
-	"ttf-jetbrains-mono-nerd"
-	"ttf-roboto-mono"
-)
-install_packages $font_pkgs
-
-# ------------------------------------------------------
 # Install Applications
 # ------------------------------------------------------
 echo ""
@@ -84,7 +70,37 @@ echo "-------------------------------------"
 echo "$ACTION Installing applications..."
 echo "-------------------------------------"
 pkgs=(
+	"ttf-firacode-nerd"
+	"ttf-jetbrains-mono-nerd"
+	"ttf-roboto-mono"
+
+	"fcitx5-im"
+	"fcitx5-chinese-addons"
+	"fcitx5-material-color"
+
 	"zsh"
+	"wl-clipboard"
+	"zoxide"
+	"xorg-xrandr"
+	"nodejs"
+	"npm"
+	"mpv"
+	"joshuto"
+	"nutstore"
+
+	"texlive"
+	"texlive-lang"
+	"biber"
+
+	"hyprland"
+	"eww"
+	"waybar"
+	"swww"
+	"mako"
+	"swaync"
+	"wofi"
+
+	"alsa-utils"
 	"sof-firmware"
 	"network-manager-applet"
 	"v2raya"
@@ -93,6 +109,11 @@ pkgs=(
 	"joshuto"
 	"google-chrome"
 	"wps-office-cn"
+	"wps-office-mime-cn"
+	"wps-office-mui-zh-cn"
+	"wps-office-fonts"
+	"ttf-wps-fonts"
+	"cups"
 	"linuxqq"
 	"wechat-uos"
 	"feishu-bin"

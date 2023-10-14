@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 
-
-
 source ~/.config/hypr/lib.sh
-
-
 
 run_hook pre &
 
 swww init
 
-set_wallpaper ~/.config/hypr/wallpaper.png
+set_wallpaper ~/.config/hypr/wallpaper.jpg
 
 ~/.config/hypr/waybar/start
 ~/.config/hypr/swaync/start

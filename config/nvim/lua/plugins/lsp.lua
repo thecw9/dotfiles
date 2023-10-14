@@ -78,6 +78,8 @@ return {
 		opts = {
 			ensure_installed = {
 				"stylua",
+				"prettierd",
+				"prettier",
 				"shfmt",
 				"bash-language-server",
 				"clangd",
