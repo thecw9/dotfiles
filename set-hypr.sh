@@ -14,6 +14,10 @@ echo "-------------------------------------"
 echo "$ACTION Installing applications..."
 echo "-------------------------------------"
 pkgs=(
+	"watchexec"
+	"unzip"
+	"unarchiver"
+
 	"ttf-firacode-nerd"
 	"ttf-jetbrains-mono-nerd"
 	"ttf-roboto-mono"
@@ -23,7 +27,12 @@ pkgs=(
 	"fcitx5-material-color"
 
 	"zsh"
+	"grim"
+	"slurp"
+	"swappy"
 	"wl-clipboard"
+	"cliphist"
+	"feh"
 	"zoxide"
 	"xorg-xrandr"
 	"xorg-xrdb"
@@ -48,12 +57,15 @@ pkgs=(
 	"wofi"
 
 	"alsa-utils"
+	"pipewire"
+	"pulseaudio"
 	"sof-firmware"
 	"network-manager-applet"
 	"v2raya"
 	"nemo"
 	"neovim"
 	"joshuto"
+	"microsoft-edge-stable"
 	"google-chrome"
 	"wps-office-cn"
 	"libtiff5"
@@ -66,6 +78,8 @@ pkgs=(
 	"wechat-uos"
 	"feishu-bin"
 
+	"nwg-look-bin"
+	"network-manager-applet"
 	"bibata-cursor-theme"
 	"nordic-theme"
 )
