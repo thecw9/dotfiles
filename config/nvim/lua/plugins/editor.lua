@@ -183,28 +183,6 @@ return {
 		event = "InsertEnter",
 	},
 
-	-- comment
-	{ "JoosepAlviste/nvim-ts-context-commentstring", lazy = true },
-	{
-		"echasnovski/mini.comment",
-		event = "VeryLazy",
-		opts = {
-			mappings = {
-				comment = "<C-/>",
-				comment_line = "<C-/>",
-				textobject = "<C-/>",
-			},
-			hooks = {
-				pre = function()
-					require("ts_context_commentstring.internal").update_commentstring({})
-				end,
-			},
-		},
-		config = function(_, opts)
-			require("mini.comment").setup(opts)
-		end,
-	},
-
 	{
 		"karb94/neoscroll.nvim",
 		config = function()
