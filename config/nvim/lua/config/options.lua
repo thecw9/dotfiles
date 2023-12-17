@@ -50,6 +50,7 @@ opt.colorcolumn = "80"
 
 -- fold
 opt.foldmethod = "indent"
+-- opt.foldmethod = "syntax"
 opt.foldlevel = 99
 opt.foldenable = true
 opt.foldlevelstart = 99

@@ -40,6 +40,7 @@ pkgs=(
 	"npm"
 	"mpv"
 	"joshuto"
+	"perl-image-exiftool"
 	"nutstore"
 
 	"texlive"

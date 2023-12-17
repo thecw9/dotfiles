@@ -11,8 +11,8 @@
 }
 
 window#waybar {
-  background-color: #1f2223;
-  border-bottom: 2px solid #191c1d;
+  /* background-color: #1f2223; */
+  background-color: rgba(0, 0, 0, 0.4);
   color: #ebdbb2;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -45,7 +45,6 @@ button {
   background-color: #689d6a;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #518554;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 15px;
@@ -56,19 +55,17 @@ button {
 button:hover {
   background: inherit;
   background-color: #8ec07c;
-  border-bottom: 2px solid #76a765;
 }
 
 button.active {
   background: inherit;
   background-color: #9db37e;
-  border-bottom: 2px solid #89a06b;
 }
 
 #workspaces button {
   padding: 0 10px;
   margin: 0 1px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
 }
 
 #window {
@@ -79,7 +76,6 @@ button.active {
   background-color: #689d6a;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #518554;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -90,7 +86,6 @@ button.active {
   background-color: #689d6a;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #518554;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -101,7 +96,6 @@ button.active {
   background-color: #e23c2c;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #cc241d;
   border-radius: 5px;
   margin-bottom: 1px;
   margin-right: 4px;
@@ -113,7 +107,6 @@ button.active {
   background-color: #5d9da0;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #458588;
   border-radius: 5px;
   margin-bottom: 1px;
 }
@@ -129,7 +122,6 @@ button.active {
   background-color: #e23c2c;
   color: #1d2021;
   border: none;
-  border-bottom: 2px solid #cc241d;
   border-radius: 5px;
   margin-bottom: 1px;
 }
@@ -142,7 +134,6 @@ label:focus {
   background-color: #689d6a;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #518554;
   border-radius: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -152,7 +143,6 @@ label:focus {
   background-color: #c8779b;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #b16286;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -163,7 +153,6 @@ label:focus {
   background-color: #98971a;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #828200;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -178,7 +167,6 @@ label:focus {
   background-color: #98bbad;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #80a295;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -189,7 +177,6 @@ label:focus {
   background-color: #2980b9;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #204a87;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -204,7 +191,6 @@ label:focus {
   background-color: #f2b13c;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #d79921;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
@@ -215,7 +201,6 @@ label:focus {
   background-color: #ec7024;
   color: #282828;
   border: none;
-  border-bottom: 2px solid #d05806;
   border-radius: 5px;
   margin-bottom: 1px;
   padding-left: 10px;
