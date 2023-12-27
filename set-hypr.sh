@@ -27,6 +27,7 @@ pkgs=(
 	"fcitx5-material-color"
 
 	"zsh"
+  "tmux"
 	"grim"
 	"slurp"
 	"swappy"
