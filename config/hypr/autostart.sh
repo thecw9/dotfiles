@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo 'Xft.dpi: 140' | xrdb -merge
+
 source ~/.config/hypr/lib.sh
 
 run_hook pre &

@@ -78,6 +78,9 @@ return {
 		opts = {
 			ensure_installed = {
 				"stylua",
+				"eslint-lsp",
+				"eslint_d",
+				"vue-language-server",
 				"prettierd",
 				"prettier",
 				"shfmt",

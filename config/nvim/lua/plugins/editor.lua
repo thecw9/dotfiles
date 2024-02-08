@@ -205,6 +205,7 @@ return {
 	{
 		"nvim-neo-tree/neo-tree.nvim",
 		cmd = "Neotree",
+		enabled = false,
 		keys = {
 			{
 				"<leader>e",
@@ -283,7 +284,6 @@ return {
 	{
 		"nvim-tree/nvim-tree.lua",
 		cmd = { "NvimTreeToggle", "NvimTreeOpen" },
-		enabled = false,
 		keys = {
 			{ "<leader>e", "<cmd>NvimTreeToggle<CR>", desc = "NvimTree Toggle" },
 			{ "<leader>o", "<cmd>NvimTreeFocus<CR>", desc = "NvimTree Focus" },

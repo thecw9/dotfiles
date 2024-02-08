@@ -14,6 +14,8 @@ echo "-------------------------------------"
 echo "$ACTION Installing applications..."
 echo "-------------------------------------"
 pkgs=(
+	"kitty"
+
 	"watchexec"
 	"unzip"
 	"unarchiver"
@@ -43,10 +45,6 @@ pkgs=(
 	"joshuto"
 	"perl-image-exiftool"
 	"nutstore"
-
-	"texlive"
-	"texlive-lang"
-	"biber"
 
 	"polkit-gnome"
 
@@ -84,6 +82,11 @@ pkgs=(
 	"network-manager-applet"
 	"bibata-cursor-theme"
 	"nordic-theme"
+
+	"texlive"
+	"texlive-lang"
+	"biber"
+
 )
 install_packages $pkgs
 

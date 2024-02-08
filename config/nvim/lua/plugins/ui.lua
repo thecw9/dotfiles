@@ -259,6 +259,7 @@ return {
 	-- notify
 	{
 		"rcarriga/nvim-notify",
+		enabled = false,
 		config = function()
 			vim.notify = require("notify")
 			require("telescope").load_extension("notify")
