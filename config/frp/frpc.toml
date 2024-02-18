@@ -1,0 +1,31 @@
+serverAddr = "118.25.99.119"
+serverPort = 7000
+
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 6000
+
+[[proxies]]
+name = "vite-dev"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 5173
+remotePort = 5173
+
+[[proxies]]
+name = "nginx"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 80
+remotePort = 80
+
+[[proxies]]
+name = "fastapi"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8000
+remotePort = 8000
+

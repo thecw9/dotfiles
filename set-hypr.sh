@@ -29,7 +29,7 @@ pkgs=(
 	"fcitx5-material-color"
 
 	"zsh"
-  "tmux"
+	"tmux"
 	"grim"
 	"slurp"
 	"swappy"
@@ -44,7 +44,7 @@ pkgs=(
 	"mpv"
 	"joshuto"
 	"perl-image-exiftool"
-	"nutstore"
+	"nutstore-experimental"
 
 	"polkit-gnome"
 
@@ -71,12 +71,10 @@ pkgs=(
 	"libtiff5"
 	"wps-office-mime-cn"
 	"wps-office-mui-zh-cn"
-	"wps-office-fonts"
-	"ttf-wps-fonts"
+
 	"cups"
 	"linuxqq"
 	"wechat-uos"
-	"feishu-bin"
 
 	"nwg-look-bin"
 	"network-manager-applet"
@@ -102,6 +100,7 @@ create_symlink ./config/.Xresources $HOME/.Xresources
 create_symlink ./config/.gitconfig $HOME/.gitconfig
 create_symlink ./config/.ssh $HOME/.ssh
 create_symlink ./config/hypr $HOME/.config/hypr
+create_symlink ./config/fcitx5 $HOME/.config/fcitx5
 create_symlink ./config/i3 $HOME/.config/i3
 create_symlink ./config/qtile $HOME/.config/qtile
 create_symlink ./config/sway $HOME/.config/sway
@@ -118,4 +117,5 @@ create_symlink ./config/zsh $HOME/.config/zsh
 create_symlink ./config/.zshrc $HOME/.zshrc
 create_symlink ./config/frp /etc/frp
 create_symlink ./config/joshuto $HOME/.config/joshuto
+create_symlink ./config/yazi $HOME/.config/yazi
 echo "$OK Soft links created."
