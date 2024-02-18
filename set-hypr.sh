@@ -118,4 +118,5 @@ create_symlink ./config/.zshrc $HOME/.zshrc
 create_symlink ./config/frp /etc/frp
 create_symlink ./config/joshuto $HOME/.config/joshuto
 create_symlink ./config/yazi $HOME/.config/yazi
+create_symlink ./config/gtk-3.0 $HOME/.config/gtk-3.0
 echo "$OK Soft links created."
