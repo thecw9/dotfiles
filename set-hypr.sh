@@ -78,7 +78,7 @@ pkgs=(
 
 	"nwg-look-bin"
 	"network-manager-applet"
-	"bibata-cursor-theme"
+	# "bibata-cursor-theme"
 	"nordic-theme"
 
 	"texlive"
@@ -105,6 +105,7 @@ create_symlink ./config/i3 $HOME/.config/i3
 create_symlink ./config/qtile $HOME/.config/qtile
 create_symlink ./config/sway $HOME/.config/sway
 create_symlink ./config/wofi $HOME/.config/wofi
+create_symlink ./config/wezterm $HOME/.config/wezterm
 create_symlink ./config/sxhkd $HOME/.config/sxhkd
 create_symlink ./config/swhkd $HOME/.config/swhkd
 create_symlink ./config/nvim $HOME/.config/nvim
@@ -119,4 +120,5 @@ create_symlink ./config/frp /etc/frp
 create_symlink ./config/joshuto $HOME/.config/joshuto
 create_symlink ./config/yazi $HOME/.config/yazi
 create_symlink ./config/gtk-3.0 $HOME/.config/gtk-3.0
+create_symlink ./config/matplotlib $HOME/.config/matplotlib
 echo "$OK Soft links created."

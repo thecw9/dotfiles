@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo 'Xft.dpi: 140' | xrdb -merge
+echo 'Xft.dpi: 120' | xrdb -merge
 
 source ~/.config/hypr/lib.sh
 
