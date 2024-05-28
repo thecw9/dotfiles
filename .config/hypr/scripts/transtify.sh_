@@ -1,0 +1,4 @@
+engine="google"
+transout=$(crow --brief --speak-source --speak-translation --translation zh-CN --engine "$engine" $(wl-paste -p))
+# transout=$(trans -b -sp -p -t zh -e "$engine" "$(xsel -op)")
+notify-send "$transout"
