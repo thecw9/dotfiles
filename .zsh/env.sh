@@ -10,6 +10,10 @@ if [ -d "$HOME/.local/bin" ]; then
 	PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -d "$HOME/go/bin" ]; then
+	PATH="$HOME/go/bin:$PATH"
+fi
+
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 

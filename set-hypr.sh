@@ -19,12 +19,19 @@ pkgs=(
 	"wezterm"
 	"yazi"
 
+	"zathura"
+	"zathura-pdf-mupdf"
+
+	"sway"
+	"swaybg"
+	"foot"
+	"polkit"
+
 	"watchexec"
 	"unzip"
 	"unarchiver"
 
 	"ttf-firacode-nerd"
-	"nerd-fonts-sf-mono"
 	"ttf-jetbrains-mono-nerd"
 	"ttf-roboto-mono"
 	"otf-comicshanns-nerd"

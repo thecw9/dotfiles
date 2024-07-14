@@ -67,23 +67,6 @@ else
 	sudo pacman -S paru
 fi
 
-# check if oh-my-zsh is installed
-echo ""
-echo "-------------------------------------"
-echo "$ACTION Installing oh-my-zsh..."
-echo "-------------------------------------"
-if [ ! -d ~/.oh-my-zsh ]; then
-	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
-fi
-
-# check if zsh-autosuggestions is installed and install it
-echo ""
-echo "-------------------------------------"
-echo "$ACTION Installing zsh-autosuggestions..."
-echo "-------------------------------------"
-if [ ! -d ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions ]; then
-	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-fi
 
 # check if TPM is installed and install it
 echo ""

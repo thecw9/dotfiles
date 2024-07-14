@@ -10,9 +10,9 @@ swww init
 
 set_wallpaper ~/.config/hypr/wallpaper.jpg
 
-~/.config/hypr/waybar/start
-~/.config/hypr/swaync/start
-~/.config/hypr/eww/start
+~/.config/hypr/waybar/start.sh
+~/.config/hypr/swaync/start.sh
+~/.config/hypr/eww/start.sh
 
 nm-applet &
 blueman-applet &
