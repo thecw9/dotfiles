@@ -27,3 +27,11 @@ unset __conda_setup
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+envfile="/home/thecw/Projects/xiaoxiang/development.env"
+if [ -f $envfile ]; then
+  export $(grep -v '^#' $envfile | xargs)
+fi
+
+

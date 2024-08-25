@@ -14,6 +14,7 @@ echo "-------------------------------------"
 echo "$ACTION Installing applications..."
 echo "-------------------------------------"
 pkgs=(
+  "stow"
   "kitty"
   "fzf"
   "wezterm"
@@ -21,6 +22,7 @@ pkgs=(
 
   "zathura"
   "zathura-pdf-mupdf"
+  "imagemagick"
 
   "sway"
   "swaybg"
@@ -61,12 +63,19 @@ pkgs=(
   "polkit-gnome"
 
   "hyprland"
-  "eww"
+  "wlogout"
   "waybar"
   "swww"
   "mako"
   "swaync"
   "wofi"
+  "grimblast"
+
+  "i3"
+  "polybar"
+  "picom"
+  "xclip"
+  "rofi"
 
   "alsa-utils"
   "pipewire"

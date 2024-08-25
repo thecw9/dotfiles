@@ -1,6 +1,10 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-killall waybar
-pkill waybar
-sleep 0.1
+# Terminate already running bar instances
+killall -q waybar
+
+# Wait until the processes have been shut down
+while pgrep -x waybar >/dev/null; do sleep 1; done
+
+# Launch main
 waybar -c ~/.config/hypr/waybar/config.json -s ~/.config/hypr/waybar/style.css &

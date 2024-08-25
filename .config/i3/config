@@ -324,15 +324,6 @@ for_window [class="wemeetapp"] move to workspace 10
 
 # USER APPLICATIONS TO START AT BOOT
 
-# Kitty
-exec --no-startup-id kitty
-
-# ArcoLinux Welcome App
-#exec --no-startup-id dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
-
-# Fcitx5
-exec --no-startup-id fcitx5
-
 # Autotiling
 #exec_always --no-startup-id autotiling
 
@@ -694,7 +685,6 @@ client.unfocused        #212121 #212121 #ffff00 #292d2e   #5a5a5a
 client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
 client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
 client.background       #212121
-
 
     ##STOP THEMING WM
 

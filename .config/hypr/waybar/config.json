@@ -1,16 +1,26 @@
 {
+  // -------------------------------------------------------------------------
+  // Global configuration
+  // -------------------------------------------------------------------------
+
   "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 10, // Waybar height (to be removed for auto height)
+  // "height": 10, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window",
+    "custom/media",
+    "temperature"
+  ],
+
   // "modules-center": ["hyprland/window"],
+
   "modules-right": [
     "custom/swaync",
-    "custom/menu",
-    "tray",
     "pulseaudio",
     "cpu",
     "memory",
@@ -19,7 +29,8 @@
     // "battery#bat2",
     // "network",
     "clock",
-    "custom/powermenu"
+    "tray",
+    "custom/power"
   ],
   // Modules configuration
   "custom/powermenu": {
@@ -27,18 +38,17 @@
     "on-click": "~/.config/hypr/eww/scripts/waybar/powermenu",
     "tooltip": false
   },
+  "custom/power": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "wlogout"
+  },
   "custom/swaync": {
     "format": " ",
     "on-click": "~/.config/hypr/swaync/scripts/tray_waybar.sh",
     "on-click-right": "swaync-client -C",
     "tooltip": false
   },
-  "custom/menu": {
-    "format": " ",
-    "on-click": "~/.config/hypr/eww/scripts/waybar/bar_menu",
-    "tooltip": false
-  },
-
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,

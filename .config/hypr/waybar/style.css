@@ -103,6 +103,17 @@ button.active {
   padding-right: 5px;
 }
 
+#custom-power {
+  background-color: #e23c2c;
+  color: #282828;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1px;
+  margin-right: 4px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
 #battery {
   background-color: #5d9da0;
   color: #282828;

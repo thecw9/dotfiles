@@ -5,6 +5,10 @@
 xrdb -merge <<<'Xft.dpi: 120'
 xrdb -merge <<<'Xcursor.size: 34'
 
+fcitx5 &
+
+kitty --name=scratchpad --class=scratchpad -e zsh -c "tmux new-session -A -s scratchpad" &
+
 # feh sets wallpaper
 feh --bg-fill ~/.config/i3/wallpaper/att-04.jpg
 
