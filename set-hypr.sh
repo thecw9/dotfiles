@@ -16,13 +16,23 @@ echo "-------------------------------------"
 pkgs=(
   "stow"
   "kitty"
-  "fzf"
   "wezterm"
   "yazi"
+  "dragon"
+  "ffmpeg"
+  "p7zip"
+  "jq"
+  "poppler"
+  "fd"
+  "ripgrep"
+  "fzf"
+  "zoxide"
+  "imagemagick"
+
+  "gnu-netcat"
 
   "zathura"
   "zathura-pdf-mupdf"
-  "imagemagick"
 
   "sway"
   "swaybg"
@@ -50,7 +60,6 @@ pkgs=(
   "wl-clipboard"
   "cliphist"
   "feh"
-  "zoxide"
   "xorg-xrandr"
   "xorg-xrdb"
   "nodejs"
@@ -62,7 +71,7 @@ pkgs=(
 
   "polkit-gnome"
 
-  "hyprland"
+  "hyprland-git"
   "wlogout"
   "waybar"
   "swww"
@@ -92,11 +101,10 @@ pkgs=(
   "libtiff5"
   "wps-office-mime-cn"
   "wps-office-mui-zh-cn"
-  "freetype2-wps"
 
   "cups"
   "linuxqq"
-  "wechat-universal-bwrap"
+  "wechat"
 
   "nwg-look-bin"
   "network-manager-applet"

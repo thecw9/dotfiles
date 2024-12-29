@@ -7,6 +7,8 @@ xrdb -merge <<<'Xcursor.size: 34'
 
 fcitx5 &
 
+bash ~/.config/i3/picom/picom-toggle.sh &
+
 kitty --name=scratchpad --class=scratchpad -e zsh -c "tmux new-session -A -s scratchpad" &
 
 # feh sets wallpaper
@@ -18,7 +20,10 @@ feh --bg-fill ~/.config/i3/wallpaper/att-04.jpg
 # network
 nm-applet &
 
+# notification
+dunst &
+
 # Authentication dialog
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-picom --config ~/.config/i3/picom.conf &
+# picom --config ~/.config/i3/picom.conf &

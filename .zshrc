@@ -29,7 +29,7 @@ unset __conda_setup
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
-envfile="/home/thecw/Projects/xiaoxiang/development.env"
+envfile="/home/thecw/Projects/huabishang/development.env"
 if [ -f $envfile ]; then
   export $(grep -v '^#' $envfile | xargs)
 fi

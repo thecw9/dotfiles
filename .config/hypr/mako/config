@@ -1,21 +1,25 @@
-font=JetBrainsMono Nerd Font 14
-background-color=#1d2021
-text-color=#ebdbb2
-width=1000
-height=250
-border-size=4
-border-color=#689d6a
-border-radius=10
-padding=20
-icons=1
-actions=1
-history=1
+sort=-time
 layer=overlay
-text-alignment=center
+background-color=#2e34407f
+width=450
+height=150
+border-size=3
+border-color=#99c0d0
+border-radius=12
+icons=0
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=0
+font="Noto Sans CJK SC" 14
+margin=12
+padding=12,20
 
-[urgency=high]
-border-color=#cc241d
-text-color=#fb4934
+[urgency=low]
+border-color=#cccccc
+
+[urgency=normal]
+border-color=#99c0d0
+
+[urgency=critical]
+border-color=#bf616a
 default-timeout=0
-
-

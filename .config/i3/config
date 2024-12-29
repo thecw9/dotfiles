@@ -94,49 +94,20 @@ bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
 ################# Program launcher
 
-# start dmenu
-bindsym $mod+shift+d exec --no-startup-id dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+# start rofi
+bindsym $mod+space exec --no-startup-id "rofi -combi-modi window,drun,ssh -show combi"
 
-# start xfce4-appfinder
-bindsym mod1+F2 exec --no-startup-id xfce4-appfinder --collapsed
+# color picker 
+bindsym $mod+p exec --no-startup-id bash -c "~/.config/i3/scripts/colorpicker.sh"
 
-# start xfce-appfinder
-bindsym mod1+F3 exec --no-startup-id xfce4-appfinder
-
-# start xlunch app launcher
-# bindsym mod1+F5 exec --no-startup-id xlunch --config ~/.config/xlunch/default.conf --input ~/.config/xlunch/entries.dsv
-
-# start rofi full
-bindsym $mod+F11 exec --no-startup-id "rofi -font 'Noto Sans 13' -theme-str 'window {width: 100%;height: 100%;}' -show drun"
-
-# start rofi small
-bindsym $mod+space exec --no-startup-id "rofi -combi-modi window,drun,ssh -show combi" 
-
-################# how to exit, logoff, suspend, ...
-
-# Backup exit
-# Press ctrl+alt+x - check toolbar for next choices
-bindsym control+mod1+X mode "$mode_system"
-
-set $mode_system System (k) lock, (l) logout, (u) suspend, (h) hibernate, (r) reboot, (s) shutdown
-mode "$mode_system" {
-    bindsym k exec --no-startup-id ~/.config/i3/scripts/i3exit.sh lock, mode "default"
-    bindsym l exec --no-startup-id ~/.config/i3/scripts/i3exit.sh logout, mode "default"
-    bindsym u exec --no-startup-id ~/.config/i3/scripts/i3exit.sh suspend, mode "default"
-    bindsym h exec --no-startup-id ~/.config/i3/scripts/i3exit.sh hibernate, mode "default"
-    bindsym r exec --no-startup-id ~/.config/i3/scripts/i3exit.sh reboot, mode "default"
-    bindsym s exec --no-startup-id ~/.config/i3/scripts/i3exit.sh shutdown, mode "default"
-
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
 
 # Translate
 bindsym $mod+t exec --no-startup-id ~/.config/i3/scripts/transtify.sh
 # ArcoLinux Logout
 bindsym $mod+Shift+e exec --no-startup-id archlinux-logout
 bindsym $mod+X exec --no-startup-id archlinux-logout
+
+bindsym $mod+s exec --no-startup-id flameshot full
 
 ################# reload changed configuration     
 
@@ -214,7 +185,7 @@ bindsym $mod+Shift+semicolon split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout toggle split 
+# bindsym $mod+s layout toggle split 
 bindsym $mod+e layout toggle splith tabbed splitv
 
 # change focus between tiling / floating windows
@@ -280,7 +251,7 @@ assign [class="Google-chrome"] workspace 5
 assign [class="wps|wpp|et|Soffice"] workspace 6
 assign [class="sioyek|Evince|okular|pdf"] workspace 7
 assign [class="Inkscape"] workspace 8
-assign [class="weixin|QQ|Feishu"] workspace 9
+assign [class="wechat|QQ|Feishu"] workspace 9
 assign [class="qqmusic|airdroid-nativefier-eabede"] workspace 10
 for_window [class="wemeetapp"] move to workspace 10
 
@@ -416,19 +387,6 @@ bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
 # htop
 # arcolinux conflict
 # bindsym $mod+h exec --no-startup-id htop;focus
-
-# pavucontrol
-bindsym control+mod1+u exec --no-startup-id pavucontrol
-
-# start xfce-appfinder
-# arcolinux does not seem to work
-bindsym control+mod1+a exec --no-startup-id xfce4-appfinder
-
-# pamac-manager
-bindsym control+mod1+p exec --no-startup-id pamac-manager
-
-# xkill
-bindsym --release $mod+Escape exec xkill
 
 # Function Keybinds
 # Browser
@@ -734,3 +692,5 @@ client.background       #212121
 
 # get the mouse out of the way with unclutter
 # exec --no-startup-id unclutter
+
+

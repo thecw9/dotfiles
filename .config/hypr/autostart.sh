@@ -12,6 +12,7 @@ set_wallpaper ~/.config/hypr/wallpaper.jpg
 
 ~/.config/hypr/waybar/start.sh
 ~/.config/hypr/swaync/start.sh
+# ~/.config/hypr/mako/start.sh
 ~/.config/hypr/eww/start.sh
 
 nm-applet &
